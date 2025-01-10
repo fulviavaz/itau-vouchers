@@ -5,7 +5,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center">
+    <main className="flex flex-col items-center justify-center">
       <div className="w-4/5">
         <div className="bg-slate-400 w-full h-[300px]"></div>
         <div className="flex flex-wrap justify-between my-10">
@@ -44,6 +44,11 @@ export default function Home() {
           
         </div>
       </div>
+      <footer className="w-full bg-black">
+        <div className="text-center py-5">
+          <p className="text-white">© 2025 Itau Vouchers</p>
+        </div>
+      </footer>
     </main>
   );
 }
