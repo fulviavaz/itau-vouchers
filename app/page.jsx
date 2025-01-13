@@ -7,40 +7,14 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <div className="w-4/5">
-        <div className="bg-slate-400 w-full h-[300px]"></div>
-        <div className="flex flex-wrap justify-between my-10">
-          <Card className="my-4 w-60 h-80 flex flex-col justify-start items-center">
-            <div className="w-full h-[200px] bg-slate-500 rounded-lg"></div>
-            <CardTitle className="text-lg p-5">Card Title</CardTitle>
-            <div className="flex w-full justify-between px-5"><Button>Button</Button>
-              <Button variant="outline">Button</Button>
-            </div>
-            
-          </Card>
-            <Card className="my-4 w-60 h-80 flex flex-col justify-start items-center">
-            <div className="w-full h-[200px] bg-slate-500 rounded-lg"></div>
-            <CardTitle className="text-lg p-5">Card Title</CardTitle>
-            <div className="flex w-full justify-between px-5"><Button>Button</Button>
-              <Button variant="outline">Button</Button>
-            </div>
-            
-          </Card>
-            <Card className="my-4 w-60 h-80 flex flex-col justify-start items-center">
-            <div className="w-full h-[200px] bg-slate-500 rounded-lg"></div>
-            <CardTitle className="text-lg p-5">Card Title</CardTitle>
-            <div className="flex w-full justify-between px-5"><Button>Button</Button>
-              <Button variant="outline">Button</Button>
-            </div>
-            
-          </Card>
-            <Card className="my-4 w-60 h-80 flex flex-col justify-start items-center">
-            <div className="w-full h-[200px] bg-slate-500 rounded-lg"></div>
-            <CardTitle className="text-lg p-5">Card Title</CardTitle>
-            <div className="flex w-full justify-between px-5"><Button>Button</Button>
-              <Button variant="outline">Button</Button>
-            </div>
-            
-          </Card>
+        <div className="bg-slate-400 w-full h-[400px] rounded-b-2xl flex items-end justify-center">
+          <Button className="mb-4">Botão</Button>
+        </div>
+        <div className="flex flex-col justify-between my-10">
+          <h1 className="text-3xl font-bold">Título</h1>
+          <h2 className="text-2xl font-bold">Subtítulo</h2>
+          <p className='text-lg mt-4 mb-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ipsum, natus quam nulla enim facilis ad molestiae minus, veritatis, unde assumenda ea voluptates quae! Vitae quam ea nisi laboriosam vero?</p>
+          <Button >Botão</Button>
           
         </div>
       </div>
