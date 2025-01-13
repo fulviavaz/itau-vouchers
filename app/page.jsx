@@ -1,23 +1,35 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
       {/* Ajuste para largura fixa e centralização */}
       <div className="w-full max-w-[330px]">
-        <div className="bg-slate-400 w-full h-[400px] rounded-b-2xl flex items-end justify-center">
-          <Button className="mb-4">Botão</Button>
+        <div className="bg-slate-400 w-full h-[400px] rounded-b-2xl flex items-end justify-center  bg-[url('/bgimg.jpg')] bg-cover bg-center">
+          <Image src="/Logo kart italia.png" alt="logo" width={90} height={35} className="mb-4"  />
         </div>
         <div className="flex flex-col justify-between my-10">
-          <h1 className="text-3xl font-bold">Título</h1>
-          <h2 className="text-2xl font-bold">Subtítulo</h2>
+          <h1 className="text-3xl font-bold">Kart Itália</h1>
+          <h2 className="text-2xl font-bold">Desconto de 20% no pix para grupos de 5 pessoas ou 10% unitário para paramento no pix</h2>
           <p className="text-base mt-4 mb-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ipsum, natus quam nulla enim facilis ad molestiae minus, veritatis, unde assumenda ea voluptates quae! Vitae quam ea nisi laboriosam vero?
+            Apresente o Voucher no momento do seu agendamento e direto na unidade.
           </p>
-          <Button>Botão</Button>
+            <p className="text-base mt-4 mb-4">
+            Cliente clube tem 10% de desconto no agendamento individual sendo pagamento no pix ou no Grupo
+            de 5 pessoas desconto de 20%.
+          </p>
+            <p className="text-base mt-4 mb-4">
+            Localizado às margens da Rodovia Dom Pedro I, altura do KM 124 Norte na cidade de Valinhos, o Itália Kart & Eventos 
+            proporciona muito entretenimento com uma boa dose de emoção, adrenalina, aventura e descontração.
+          </p>
+            <p className="text-base mt-4 mb-4 font-bold">
+            Rod. Dom Pedro I, Km 124 Norte - Valinhos/SP
+            Contato: (19) 98446-1515
+          </p>
+          <Button>Download</Button>
         </div>
       </div>
       <footer className="w-full bg-black">
